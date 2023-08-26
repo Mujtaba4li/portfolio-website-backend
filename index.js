@@ -39,7 +39,7 @@ app.post('/api/uploadPicture', upload.single('uploadedPicture'), (req, res) => {
     return res.status(401).json({ errorMessage: 'Invalid picture format.' });
   }
 
-  return res.status(200).json({ message: 'Profile Pictuire uploaded successfully.' });
+  return res.status(200).json({ message: 'Picture uploaded successfully.' });
 });
 
 
